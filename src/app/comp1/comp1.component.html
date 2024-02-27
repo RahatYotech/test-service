@@ -1,0 +1,15 @@
+<div>
+    <h2>Comp 1</h2>
+    <input type="text" #txtnum>
+    <button (click)="addNumber(txtnum.value)">Add new number</button>
+</div>
+
+<div>
+    <ul>
+        @for(num of list1; track num) {
+            <li>
+                <b>{{ num }}</b>
+            </li>
+        }
+    </ul>
+</div>
